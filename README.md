@@ -19,3 +19,20 @@ This project addresses that gap using a combination of Exploratory Data Analysis
 
 ## 📁 Folder Structure
 
+food_delivery_model/
+│
+├── data/
+│ └── delivery_data.csv # Clean dataset used for modeling
+│
+├── src/
+│ ├── train_model.py # Script for training Ridge & Huber Regression
+│ ├── predict.py # Script for making predictions
+│ ├── utils.py # Utility functions for preprocessing
+│ └── config.toml # Streamlit configuration (theme, etc.)
+│
+├── models/
+│ └── model_huber.pkl # Saved ML model
+│
+├── app.py # Streamlit web application
+├── requirements.txt # Python dependencies
+└── README.md # Project documentation
