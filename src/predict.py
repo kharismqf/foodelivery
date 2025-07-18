@@ -33,3 +33,23 @@ def show_predict_page():
         pipeline = joblib.load("models/huber_pipeline.pkl")
         prediction = pipeline.predict(input_df)[0]
         st.success(f"Estimated Delivery Time: {prediction:.2f} minutes")
+
+    # 🔍 Show Input Summary
+    st.markdown("### 🧾 Input Summary")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.markdown(f"**📏 Distance (km):** {Distance_km}")
+        st.markdown(f"**⏲️ Preparation Time (min):** {Preparation_Time_min}")
+        st.markdown(f"**🚚 Courier Experience (yrs):** {Courier_Experience_yrs}")
+        st.markdown(f"**☁️ Weather:** {Weather}")
+
+    with col2:
+        st.markdown(f"**🚦 Traffic Level:** {Traffic_Level}")
+        st.markdown(f"**🕰️ Time of Day:** {Time_of_Day}")
+        st.markdown(f"**🛵 Vehicle Type:** {Vehicle_Type}")
+
+    st.markdown("---")
+    st.info("📌 *Note: The prediction is based on historical patterns using Huber Regression.*")
+
