@@ -1,6 +1,6 @@
 # 🚚 Food Delivery Time Prediction
 
-This project aims to build a predictive model that estimates food delivery time based on historical order and operational data. The objective is to help businesses set accurate expectations, allocate resources efficiently, and improve customer satisfaction.
+This project aims to develop a predictive model that estimates food delivery times based on historical order and operational data. The objective is to help businesses set accurate expectations, allocate resources efficiently, and enhance customer satisfaction.
 
 ---
 
@@ -19,6 +19,7 @@ This project addresses that gap using a combination of Exploratory Data Analysis
 
 ## 📁 Folder Structure
 
+```
 food_delivery_model/
 │
 ├── data/
@@ -36,3 +37,4 @@ food_delivery_model/
 ├── app.py # Streamlit web application
 ├── requirements.txt # Python dependencies
 └── README.md # Project documentation
+```
