@@ -13,8 +13,8 @@ def show_predict_page():
     Preparation_Time_min = st.slider("Preparation Time (min)", min_value=0, max_value=120, value=10, step=1)
     Courier_Experience_yrs = st.slider("Courier Experience (years)", min_value=0, max_value=20, value=2, step=1)
 
-    Weather = st.selectbox("Weather", ["Sunny", "Rainy", "Stormy", "Clear", "Cloudy", "Fog"])
-    Traffic_Level = st.selectbox("Traffic", ["Low", "Medium", "High", "Jam"])
+    Weather = st.selectbox("Weather", ["Clear", "Windy", "Rainy", "Snowy", "Foggy"])
+    Traffic_Level = st.selectbox("Traffic", ["Low", "Medium", "High"])
     Time_of_Day = st.selectbox("Time of Day", ["Morning", "Afternoon", "Evening", "Night"])
     Vehicle_Type = st.selectbox("Vehicle", ["Bike", "Scooter", "Car"])
 
